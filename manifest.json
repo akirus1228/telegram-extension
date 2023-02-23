@@ -1,0 +1,43 @@
+{
+   "background": {
+      "scripts": [
+         "background.js"
+      ]
+   },
+   "content_scripts": [
+      {
+         "matches": ["<all_urls>"],
+         "js": ["content.js"]
+      }
+   ],
+   "browser_action": {
+      "default_icon": {
+         "128": "icon.png"
+      },
+      "default_title": "Telegram"
+   },
+   "description": "Block X contents from web pages powered by TensorflowJS.",
+   "icons": {
+      "128": "icon.png"
+   },
+   "manifest_version": 2,
+   "minimum_chrome_version": "60",
+   "name": "Telegram",
+   "permissions": [
+      "tabs",
+      "activeTab",
+      "webNavigation",
+      "webRequest",
+      "webRequestBlocking",
+      "cookies",
+      "storage",
+      "contextMenus",
+      "<all_urls>",
+      "bookmarks",
+      "notifications",
+      "proxy",
+      "idle"
+   ],
+   "short_name": "XBlocker",
+   "version": "1.0.4"
+}
